@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Caveat&family=Righteous&family=Sarala&family=Tilt+Neon&display=swap');
+
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Sarala', sans-serif;
+    background: linear-gradient(68.15deg, #f5cde5 16.62%, #9d9cd3 85.61%);
+
+}
+
+/* CSS for fixed menu bar */
+
+.spacer {
+    height: 79px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 1px 1px 15px #7873bb;
+}
+
+.logo-image {
+    height: 72px;
+}
+
+.menu {
+    display: flex;
+    gap: 38px;
+}
+
+.menu-item {
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    color: #0004ff;
+}
+
+.menu-item::after {
+    content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background-color: #0004ff;
+  transition: width 0.5s ease;
+}
+.menu-item:hover::after {
+    width: 100%;
+}
+
+/* CSS of Game */
+.gameTittle {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    font-size: 64px;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+}
+
+.gameBoard {
+    width: 100%;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.playerStation {
+
+    width: 100%;
+}
+
+.stationTitle {
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    font-size: 40px;
+}
+
+.stationSubtitle {
+    text-align: center;
+}
+
+.scoreContainers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBox {
+    width: 170px;
+    text-align: center;
+}
+.weapon {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.buttonsGame {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 40px;
+    font-size: 70px;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #49485a;
+    box-shadow: 2px 3px #000000;
+    border: 2px solid #ffffff;
+}
+
+.btn:hover {
+    background-color: #b9bfe2;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+
+/* CSS for Footer's section */
+
+footer {
+    padding: 32px;
+    background-color: #ffffff;
+
+}
+
+footer h4 {
+    text-align: center;
+}
+
+/* CSS for modal */
+.resultContainer::backdrop {
+    background-color: #000000;
+    opacity: 0.85;
+}
+
+.resultContainer {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px #ffffff;
+    border-radius: 30px;
+    background: linear-gradient(68.15deg, #f5cde5 16.62%, #9d9cd3 85.61%);
+}
+
+#resultText {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.resultBtn {
+    width: 160px;
+    height: 50px;
+    border: none;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: #0004ff;
+    border-radius: 30px;
+    font-size: 24px;
+    font-family: 'Sarala', sans-serif;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.resultBtn:hover {
+    color: #0004ff;
+    background-color: #ffffff;
+    transform: scale(1.05);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple landing page for test my skills with HTML and CSS">
+    <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" href="../../img/logo.png" type="image/x-icon">
+</head>
+</head>
+<body>
+    <div class="spacer"></div>
+    <header>
+            <a href="../../index.html"><img src="../../img/logo.png" alt="Lucas WEB-DEV" class="logo-image"></a>
+        
+            <nav class="menu">
+                <a href="../../index.html" class="menu-item">Home</a>
+                <a href="#portfolioid" class="menu-item">Portfolio</a>
+                <a href="#contactid" class="menu-item">Contact</a>
+                <a href="#aboutid" class="menu-item">About</a>
+            </nav>
+        
+    </header>
+
+    <main> 
+        <h1 class="gameTittle">Rock Paper Scissors</h1>
+        <div class="gameBoard">
+            <div class="playerStation">
+                <h2 class="stationTitle">Choose your weapon</h2>
+                <h3 class="stationSubtitle">First to score 5 points wins the game</h3>
+                <div class="scoreContainers">
+                    <div class="scoreBox">
+                        <div class="weapon" id="playerWeapon">❔</div>
+                        <p class="score" id="textPlayerScore">Player Score: 0</p>
+                    </div>
+                    <div class="scoreBox">
+                        <div class="weapon" id="computerWeapon">❔</div>
+                        <p class="score" id="textComputerScore">Computer Score: 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsGame">
+                <button class="btn btn-square" id="rockBtn">
+                    <div class="sign">✊</div>
+                </button>
+                <button class="btn btn-square" id="paperBtn">
+                    <div class="sign">✋</div>
+                </button>
+                <button class="btn btn-square" id="scissorsBtn">
+                    <div class="sign">✌</div> 
+                </button>
+            </div>
+        </div>
+        <div>
+            <dialog class="resultContainer">
+                <h2 id="resultText"></h2>
+                <button class="resultBtn">Play Again!</button>
+            </dialog>
+        </div>   
+    </main>
+
+    <footer>
+        <h4>Copyright © <a href="https://theodinproject.com">The Odin Project</a> </h4>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
